@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './MenuItem.scss';
 
@@ -16,6 +17,12 @@ const MenuItem = ({ title, imageUrl, imageSize }) => {
       </div>
     </div>
   );
+};
+
+MenuItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  imageSize: PropTypes.string.isRequired,
 };
 
 export default MenuItem;
