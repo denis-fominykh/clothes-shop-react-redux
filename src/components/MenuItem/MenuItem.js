@@ -5,16 +5,20 @@ import './MenuItem.scss';
 
 const MenuItem = ({ title, imageUrl, imageSize }) => {
   return (
-    <div className={`menu-item ${imageSize}`}>
+    <div className={`menu-item menu-item_style ${imageSize}`}>
       <div
-        className="background-image"
+        className="menu-item__background-image menu-item__background-image_size"
         style={{
           backgroundImage: `url(${imageUrl})`,
         }}
       />
-      <div className="content">
-        <h1 className="title">{title}</h1>
-        <span className="subtitle">SHOP NOW</span>
+      <div className="menu-item__content menu-item__content_style">
+        <h1 className="menu-item__content-title menu-item__content-title_font">
+          {title}
+        </h1>
+        <span className="menu-item__content-subtitle menu-item__content-subtitle_font">
+          SHOP NOW
+        </span>
       </div>
     </div>
   );

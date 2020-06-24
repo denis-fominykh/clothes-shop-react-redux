@@ -49,7 +49,7 @@ class Directory extends Component {
     const { sections } = this.state;
 
     return (
-      <div className="directory-menu">
+      <div className="directory-menu directory-menu_display">
         {sections.map((section) => (
           <MenuItem
             key={section.id}
