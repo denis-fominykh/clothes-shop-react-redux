@@ -5,6 +5,7 @@ import './App.scss';
 
 import ErrorBoundary from './components/ErrorBoundary';
 import HomePage from './pages/HomePage';
+import ShopPage from './pages/ShopPage';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <div className="App">
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route exact path="/shop" component={ShopPage} />
           </Switch>
         </div>
       </Router>
