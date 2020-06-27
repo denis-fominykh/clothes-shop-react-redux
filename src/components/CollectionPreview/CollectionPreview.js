@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './CollectionPreview.scss';
 
@@ -19,6 +20,11 @@ const CollectionPreview = ({ title, items }) => {
       </div>
     </div>
   );
+};
+
+CollectionPreview.propTypes = {
+  title: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired,
 };
 
 export default CollectionPreview;

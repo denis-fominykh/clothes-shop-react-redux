@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './CollectionItem.scss';
 
@@ -19,6 +20,12 @@ const CollectionItem = ({ name, price, imageUrl }) => {
       </div>
     </div>
   );
+};
+
+CollectionItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  imageUrl: PropTypes.string.isRequired,
 };
 
 export default CollectionItem;
